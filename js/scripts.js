@@ -29,12 +29,19 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputtedSize = $('input[name="size"]:checked').val();
-    var inputtedTopping1 = $('#topping1 option:selected').val();
+    var inputtedTopping1 = $('#topping1').val();
+    var inputtedTopping2 = $('#topping2').val();
+    var inputtedTopping3 = $('#topping3').val();
+    var inputtedTopping4 = $('#topping4').val();
+    var inputtedTopping5 = $('#topping5').val();
 
-    // var inputtedTopping1 = $("#topping1 option:selected" ).text();
-
-
-    var newPizza = new Pizza(inputtedSize,inputtedTopping1)
+    var newPizza =
+    new Pizza(inputtedSize,
+      inputtedTopping1,
+      inputtedTopping2,
+      inputtedTopping3,
+      inputtedTopping4,
+      inputtedTopping5)
 debugger;
   });
 });
