@@ -1,6 +1,6 @@
-function Pizza (size,topping1,topping2) {
+function Pizza (size,topping1,topping2,topping3,topping4,topping5) {
   this.size = size;
-  this.toppings = [topping1,topping2]
+  this.toppings = [topping1,topping2,topping3,topping4,topping5]
   this.toppings = this.toppings.filter(function(n){ return n != undefined });
 }
 

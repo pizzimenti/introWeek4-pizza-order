@@ -22,4 +22,8 @@ describe("Pizza Price Prototype", function() {
     var testPizza = new Pizza (2,"cheese","pepperoni");
     expect(testPizza.price()).to.equal(11);
   });
+  it("has FIVE toppings", function() {
+    var testPizza = new Pizza (2,"cheese","pepperoni","anchovies","spinach","roasted garlic");
+    expect(testPizza.price()).to.equal(17);
+  });
 });
