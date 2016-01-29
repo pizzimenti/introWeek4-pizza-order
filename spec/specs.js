@@ -9,7 +9,7 @@ describe("Pizza Constructor", function() {
   })
 });
 
-describe("Pizza Price Prototype", function() {
+describe("Medium Pizza Price Prototype", function() {
   it("has no toppings", function() {
     var testPizza = new Pizza (2);
     expect(testPizza.price()).to.equal(7);
@@ -25,5 +25,44 @@ describe("Pizza Price Prototype", function() {
   it("has FIVE toppings", function() {
     var testPizza = new Pizza (2,"cheese","pepperoni","anchovies","spinach","roasted garlic");
     expect(testPizza.price()).to.equal(17);
+  });
+});
+
+
+describe("Small Pizza Price Prototype", function() {
+  it("has no toppings", function() {
+    var testPizza = new Pizza (1);
+    expect(testPizza.price()).to.equal(4);
+  });
+  it("has one topping", function() {
+    var testPizza = new Pizza (1,"cheese");
+    expect(testPizza.price()).to.equal(6);
+  });
+  it("has two toppings", function() {
+    var testPizza = new Pizza (1,"cheese","pepperoni");
+    expect(testPizza.price()).to.equal(8);
+  });
+  it("has FIVE toppings", function() {
+    var testPizza = new Pizza (1,"cheese","pepperoni","anchovies","spinach","roasted garlic");
+    expect(testPizza.price()).to.equal(14);
+  });
+});
+
+describe("Large Pizza Price Prototype", function() {
+  it("has no toppings", function() {
+    var testPizza = new Pizza (3);
+    expect(testPizza.price()).to.equal(10);
+  });
+  it("has one topping", function() {
+    var testPizza = new Pizza (3,"cheese");
+    expect(testPizza.price()).to.equal(12);
+  });
+  it("has two toppings", function() {
+    var testPizza = new Pizza (3,"cheese","pepperoni");
+    expect(testPizza.price()).to.equal(14);
+  });
+  it("has FIVE toppings", function() {
+    var testPizza = new Pizza  (3,"cheese","pepperoni","anchovies","spinach","roasted garlic");
+    expect(testPizza.price()).to.equal(20);
   });
 });

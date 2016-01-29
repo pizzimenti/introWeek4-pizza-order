@@ -5,10 +5,17 @@ function Pizza (size,topping1,topping2,topping3,topping4,topping5) {
 }
 
 Pizza.prototype.price = function() {
-  var basePrice = 7;
+  if(this.size === 1) {
+    var basePrice = 4;
+  }
+  if(this.size === 2) {
+    var basePrice = 7;
+  }
+  if(this.size === 3) {
+    var basePrice = 10;
+  }
+
   var toppingPrice = 2;
-
-
 
   var pizzaPrice = basePrice + toppingPrice * this.toppings.length;
 
