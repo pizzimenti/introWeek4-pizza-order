@@ -6,3 +6,27 @@
   margin-right: 10px;
   font-size: 1.3em;
 }
+
+button {
+  margin-top: 30px;
+}
+
+h5 {
+  color: grey;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.topping-selection {
+  margin-top: 25px;
+}
+
+#size-menu {
+  margin-top: 50px;
+}
+
+#topping-menu {
+  margin-top: 50px;
+}

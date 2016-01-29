@@ -18,12 +18,35 @@
         <div id="pizza-menu" class="col-md-6">
           <h2>Design your pizza:</h2>
           <form id="new-pizza">
-            <h3>Size:</h3>
-            <div class="radio">
-              <label><input type="radio" name="size" value=1>Small</label>
-              <label><input type="radio" name="size" value=2 checked>Medium</label>
-              <label><input type="radio" name="size" value=3>Large</label>
+      <!-- Size Radio -->
+            <div id=size-menu>
+              <h3>Size:</h3>
+              <div class="radio">
+                <label><input type="radio" name="size" value=1>Small</label>
+                <label><input type="radio" name="size" value=2 checked>Medium</label>
+                <label><input type="radio" name="size" value=3>Large</label>
+              </div>
             </div>
+      <!-- Topping Selection -->
+            <div id=topping-menu>
+              <h3>Topping Selections:</h3>
+              <h5>if you choose none you will have a plain cheese pizza</h5>
+              <div class="form-group topping-selection">
+                <label for="sel1">Topping 1</label>
+                <select id="topping1" class="form-control">
+                  <option disabled selected>-- Choose a Topping --</option>
+                  <option>Pepperoni</option>
+                  <option>Curry Chicken</option>
+                  <option>Green Peppers</option>
+                  <option>Anchovies</option>
+                  <option>Gorgonzola</option>
+                  <option>Spinach</option>
+                  <option>Arugula</option>
+                  <option>Mushrooms</option>
+                </select>
+              </div>
+            </div>
+      <!-- Submit and create pizza -->
             <button type="submit" class="btn btn-lg btn-success">Create Pizza!</button>
           </form>
         </div>

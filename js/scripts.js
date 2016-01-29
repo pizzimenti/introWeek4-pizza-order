@@ -29,8 +29,12 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputtedSize = $('input[name="size"]:checked').val();
+    var inputtedTopping1 = $('#topping1 option:selected').val();
 
-    var newPizza = new Pizza(inputtedSize)
+    // var inputtedTopping1 = $("#topping1 option:selected" ).text();
 
+
+    var newPizza = new Pizza(inputtedSize,inputtedTopping1)
+debugger;
   });
 });
