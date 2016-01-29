@@ -21,3 +21,16 @@ Pizza.prototype.price = function() {
 
   return pizzaPrice;
 }
+
+
+$(document).ready(function() {
+
+  $("form#new-pizza").submit(function(event) {
+    event.preventDefault();
+
+    var inputtedSize = $('input[name="size"]:checked').val();
+
+    var newPizza = new Pizza(inputtedSize)
+
+  });
+});
