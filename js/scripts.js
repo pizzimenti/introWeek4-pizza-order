@@ -42,6 +42,14 @@ $(document).ready(function() {
       inputtedTopping3,
       inputtedTopping4,
       inputtedTopping5)
-debugger;
+
+
+    if (inputtedSize === '1') {
+      var size = "Small";
+    } if (inputtedSize === '2') {
+      var size = "Medium";
+    } if (inputtedSize === '3')
+      var size = "Large";
+
   });
 });
