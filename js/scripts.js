@@ -4,16 +4,34 @@ function Pizza (size,topping1,topping2,topping3,topping4,topping5) {
   this.toppings = this.toppings.filter(function(n){ return n != undefined });
 }
 
-Pizza.prototype.price = function() {
-  if(this.size === 1) {
-    var basePrice = 4;
+Pizza.prototype.basePrice = function() {
+  // if(this.size == 1) {
+  //   return 4;
+  // }
+  // if(this.size == 2) {
+  //   return 7;
+  // }
+  // if(this.size == 3) {
+  //   return 10;
+  // }
+
+  switch (this.size) {
+    case 1: return 4;
+    case 2: return 7;
+    case 3: return 10;
   }
-  if(this.size === 2) {
-    var basePrice = 7;
-  }
-  if(this.size === 3) {
-    var basePrice = 10;
-  }
+}
+
+Pizza.prototype.pizzaPrice = function(basePrice) {
+  // if(this.size === 1) {
+  //   var basePrice = 4;
+  // }
+  // if(this.size === 2) {
+  //   var basePrice = 7;
+  // }
+  // if(this.size === 3) {
+  //   var basePrice = 10;
+  // }
 
   var toppingPrice = 2;
 
@@ -45,11 +63,18 @@ $(document).ready(function() {
 
 
     if (inputtedSize === '1') {
-      var size = "Small";
+      var size = "small";
     } if (inputtedSize === '2') {
-      var size = "Medium";
+      var size = "medium";
     } if (inputtedSize === '3')
-      var size = "Large";
+      var size = "large";
+
+    var basePrice = newPizza.basePrice();
+    var pizzaPrice = newPizza.pizzaPrice(basePrice);
+
+    $('#size-display').text(size);
+    $('#topping-number').text(newPizza.toppings.length);
+    $('#base-price').text('$'+basePrice);
 
   });
 });

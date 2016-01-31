@@ -16,6 +16,10 @@ button {
   margin-bottom: 30px;
 }
 
+p {
+  font-size: 1.3em;
+}
+
 h4 {
   color: grey;
 }
@@ -37,5 +41,9 @@ h5 {
 }
 
 #topping-menu {
+  margin-top: 50px;
+}
+
+#pizza-display {
   margin-top: 50px;
 }
