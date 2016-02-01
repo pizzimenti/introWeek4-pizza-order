@@ -46,7 +46,7 @@ $(document).ready(function() {
   $("form#new-pizza").submit(function(event) {
     event.preventDefault();
 
-    var inputtedSize = $('input[name="size"]:checked').val();
+    var inputtedSize = parseInt($('input[name="size"]:checked').val());
     var inputtedTopping1 = $('#topping1').val();
     var inputtedTopping2 = $('#topping2').val();
     var inputtedTopping3 = $('#topping3').val();
