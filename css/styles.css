@@ -1,5 +1,20 @@
+body {
+  background-color: lightgrey;
+}
+
 .jumbotron {
   text-align: center;
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg);
+  background-size: 100%;
+}
+
+h1 {
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
 }
 
 .container {
@@ -18,6 +33,28 @@ button {
 
 p {
   font-size: 1.3em;
+}
+
+#pizza-menu {
+  margin-bottom: 40px;
+}
+
+#pizza-menu h2 {
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: green;
+}
+
+#order-display h2 {
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+}
+
+#order-display p {
+  font-weight: bold;
 }
 
 h4 {
