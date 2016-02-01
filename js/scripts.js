@@ -75,6 +75,8 @@ $(document).ready(function() {
     $('#size-display').text(size);
     $('#topping-number').text(newPizza.toppings.length);
     $('#base-price').text('$'+basePrice);
+    $('#topping-price').text('$'+(pizzaPrice-basePrice));
+    $('#total-price').text('$'+pizzaPrice);
 
   });
 });

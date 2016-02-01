@@ -47,3 +47,7 @@ h5 {
 #pizza-display {
   margin-top: 50px;
 }
+
+.price {
+  float: right;
+}
