@@ -54,11 +54,11 @@ $(document).ready(function() {
       inputtedTopping5)
 
 
-    if (inputtedSize === '1') {
+    if (inputtedSize === 1) {
       var size = "small";
-    } if (inputtedSize === '2') {
+    } if (inputtedSize === 2) {
       var size = "medium";
-    } if (inputtedSize === '3')
+    } if (inputtedSize === 3)
       var size = "large";
 
     var basePrice = newPizza.basePrice();
