@@ -51,3 +51,11 @@ h5 {
 .price {
   float: right;
 }
+
+#total-box {
+  border-top: solid black 1px;
+}
+
+#order-display {
+  display: none;
+}

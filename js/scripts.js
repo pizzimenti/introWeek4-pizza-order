@@ -14,6 +14,7 @@ Pizza.prototype.basePrice = function() {
   // if(this.size == 3) {
   //   return 10;
   // }
+  //use switch statement instead... suggest later refactor to use strings 'small', 'medium', 'large' for size instead of int
 
   switch (this.size) {
     case 1: return 4;
@@ -23,15 +24,6 @@ Pizza.prototype.basePrice = function() {
 }
 
 Pizza.prototype.pizzaPrice = function(basePrice) {
-  // if(this.size === 1) {
-  //   var basePrice = 4;
-  // }
-  // if(this.size === 2) {
-  //   var basePrice = 7;
-  // }
-  // if(this.size === 3) {
-  //   var basePrice = 10;
-  // }
 
   var toppingPrice = 2;
 
@@ -77,6 +69,7 @@ $(document).ready(function() {
     $('#base-price').text('$'+basePrice);
     $('#topping-price').text('$'+(pizzaPrice-basePrice));
     $('#total-price').text('$'+pizzaPrice);
+    $('#order-display').show();
 
   });
 });
